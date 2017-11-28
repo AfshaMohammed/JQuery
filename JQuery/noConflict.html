@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+	<head>
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$.noConflict();
+			jQuery(document).ready(function(){
+				jQuery("button").click(function(){
+					jQuery("p").text("Welcome to my World!");
+				});
+			});
+		</script>
+		<p>Hello World!</p>
+		<button>Click Me!</button>
+	</body>
+</html>
