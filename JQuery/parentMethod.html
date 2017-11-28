@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Ancestor- parnet()</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style>
+			.Ancestor *{
+				display:block;
+				border:2px solid gray;
+				color:gray;
+				padding:5px;
+				margin:15px;
+			}
+		</style>
+		<script>
+			$(document).ready(function(){
+				$("span").parent().css({"color":"red", "border":"2px solid red" });
+			});
+		</script>
+	</head>
+	<body class="Ancestor"> body(great-great-grandparent)
+		<div style="width:500px"> div(great-grandparent)
+			<ul> ul (grandparent)
+				<li> li(parent)
+					<span>Span</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
