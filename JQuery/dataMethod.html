@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>JQuery- data() method</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready(function(){
+				$("p").click(function(){
+					$("h1").data("greetings", "Hello World!");
+				});
+				$("div").click(function(){
+					alert($("h1").data("greetings"));
+				})
+			})
+
+		</script>
+		<p>Here we attach a data to h1 element</p>
+		<div>Get data attached to the h1 element</div>
+
+		<h1></h1>
+	</body>
+</html>
