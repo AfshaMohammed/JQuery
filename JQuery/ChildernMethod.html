@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+	<head>
+		<style>
+			.Descendent *{
+				display:block;
+				color:gray;
+				border:2px solid gray;
+				padding:5px;
+				margin:15px;
+			}
+		</style>
+		<title>Descendent- children()</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("div").children().css({"color":"red", "border":"2px solid green"})
+			})
+		</script>
+	</head>
+	<body class="Descendent">
+		<div style="width:500px;"> div child
+			<ul> ul grandchild
+				<li> li great-grandchild
+					<span>Span</span> great-great-grandchild
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

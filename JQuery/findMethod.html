@@ -10,16 +10,16 @@
 				margin:15px;
 			}
 		</style>
-		<title>Ancestors- parents()</title>
+		<title>Descendent- children()</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$("div").children().css({"color":"red", "border":"2px solid green"})
-			})
+				$("ul").find("span").css({"color":"red", "border":"2px solid red"});
+			});
 		</script>
 	</head>
 	<body class="Descendent">
-		<div style="width:500px;"> div child
+		<div styel="width:500px"> div child
 			<ul> ul grandchild
 				<li> li great-grandchild
 					<span>Span</span> great-great-grandchild
