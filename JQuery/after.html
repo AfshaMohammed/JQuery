@@ -1,0 +1,20 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>after() method</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("p").after("<h1>Hello World!</h1>")
+				})
+			})
+
+		</script>
+		<button>ClickMe!</button>
+		<p>It is a After() method</p>
+		<p>insert content, specified by the parameter, after the selected element</p>
+	</body>
+</html>
